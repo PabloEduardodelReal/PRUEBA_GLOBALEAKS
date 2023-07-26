@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página con Bootstrap</title>
+  <!-- Agrega aquí la referencia al archivo de Bootstrap CSS -->
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      margin: 12.5vh;
+      max-width: 600px;
+    }
+
+    .inner-div {
+      background-color: #f1f1f1;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .inner-div:last-child {
+      margin-bottom: 0;
+    }
+    .p_h{
+        align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="inner-div">
+      <!-- Contenido del primer div -->
+      <h2>PAGINA WEB DE PRUEBA</h2>
+      <p class="p_h"> hola, usuario</p>
+    </div>
+    <div class="inner-div">
+      <!-- Contenido del segundo div -->
+      <h2>CONTACTO:</h2>
+      <p><form action="mailto:pablo.e.delrealbua@gmail.com" method="post" enctype="text/plain">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+    
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea><br>
+    
+        <input type="submit" value="Enviar">
+      </form>
+    
+      <p>¿Prefieres que te llamemos? Llámanos al <a href="tel:+608838014">608838014</a>.</p></p>
+    </div>
+  </div>
+
+  <!-- Agrega aquí la referencia al archivo de Bootstrap JS y cualquier otro script que necesites -->
+</body>
+</html>
